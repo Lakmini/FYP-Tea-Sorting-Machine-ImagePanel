@@ -182,7 +182,7 @@ public class UI extends JComponent implements ChangeListener {
 			currentImage = ryuv.getImage();
 			String path = "outputImages/" + inc + ".gif";
 			try {
-
+				
 				ImageIO.write(currentImage, "GIF", new File(path));
 			} catch (IOException e) {
 
