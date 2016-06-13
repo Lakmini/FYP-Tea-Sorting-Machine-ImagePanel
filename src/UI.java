@@ -174,6 +174,7 @@ public class UI extends JComponent implements ChangeListener {
 		File[] list = dir.listFiles();
 		System.out.println(list.length);
 		BufferedImage m;
+		new File("outputImages").mkdir();
 		for (int inc = 0; inc < list.length; inc++) {
 			String name = "inputfiles/" + list[inc].getName();
 			ReadYUYV ryuv = new ReadYUYV(width, height);
